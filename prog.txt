@@ -1,0 +1,38 @@
+#include <iostream>
+#include"windows.h"
+#include "math.h"
+using namespace std;
+int main()
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	float x, y, summ;
+	char sign;
+	cout << "Множення чи ділення?" << endl;
+	cin >> sign;
+	switch (sign)
+	{
+	case '+':
+		cout << "Введіть Х" << endl;
+		cin >> x;
+		for (int i = 1; i < 5; i++)
+		{
+			summ = tan(i + x * x);
+		}
+		cout << summ << endl;
+		break;
+	case '*':
+		cout << "Введіть X" << endl;
+		cin >> x;
+		for (int k = 1; k < 10; k++)
+		{
+			summ = pow(k, 3);
+		}
+		x = pow(x, 5) + summ;
+		cout << x << endl;
+		break;
+	default:
+		cout << "Введіть коректну дію" << endl;
+		break;
+	}
+}
