@@ -10,7 +10,7 @@ int main()
 	while (x < 3)
 	{
 		y = exp(x) + abs(x) + x * x;
-		cout << y << endl;
+		printf("%n", &y);
 		x += 0.1;
 	}
 }
